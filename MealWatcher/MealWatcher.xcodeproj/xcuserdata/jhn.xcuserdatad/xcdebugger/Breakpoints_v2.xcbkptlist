@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "19576EAE-AA88-4E8F-BCD2-060B85D0ABC9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86F4CFFB-794F-49BE-BF3A-FD3EBD20ADE4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/WatchConnectivityManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "session(_:didReceiveApplicationContext:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "86F4CFFB-794F-49BE-BF3A-FD3EBD20ADE4 - 9c96a2537c68b594"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WatchPhoneAppDemo_Watch_App.WatchConnectivityManager.session(_: __C.WCSession, didReceiveApplicationContext: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "WatchPhoneAppDemo Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/WatchPhoneAppDemo/Shared/WatchConnectivityManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "86F4CFFB-794F-49BE-BF3A-FD3EBD20ADE4 - c1bf31a98c6e34c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WatchPhoneAppDemo.WatchConnectivityManager.session(_: __C.WCSession, didReceiveApplicationContext: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "WatchPhoneAppDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/WatchPhoneAppDemo/Shared/WatchConnectivityManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "86F4CFFB-794F-49BE-BF3A-FD3EBD20ADE4 - f81670e08be4165e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealWatcher_Watch_App.WatchConnectivityManager.session(_: __C.WCSession, didReceiveApplicationContext: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "MealWatcher Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/MealWatcher/Shared/WatchConnectivityManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "86F4CFFB-794F-49BE-BF3A-FD3EBD20ADE4 - 5f80ab3ee0162301"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealWatcher.WatchConnectivityManager.session(_: __C.WCSession, didReceiveApplicationContext: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "MealWatcher"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/MealWatcher/Shared/WatchConnectivityManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "86F4CFFB-794F-49BE-BF3A-FD3EBD20ADE4 - f81670e08be4167f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealWatcher_Watch_App.WatchConnectivityManager.session(_: __C.WCSession, didReceiveApplicationContext: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "MealWatcher Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/MealWatcher/Shared/WatchConnectivityManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "86F4CFFB-794F-49BE-BF3A-FD3EBD20ADE4 - caedc6a4a0b48f77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of MealWatcher.WatchConnectivityManager.session(_: __C.WCSession, didReceiveApplicationContext: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "MealWatcher"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/MealWatcher/Shared/WatchConnectivityManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "208">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF626525-8EDF-4176-845F-713046F84962"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/WatchConnectivityManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "session(_:didReceiveApplicationContext:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BF626525-8EDF-4176-845F-713046F84962 - 5f80ab3ee0162301"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealWatcher.WatchConnectivityManager.session(_: __C.WCSession, didReceiveApplicationContext: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "MealWatcher"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/MealWatcher/Shared/WatchConnectivityManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "BF626525-8EDF-4176-845F-713046F84962 - f81670e08be4165e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealWatcher_Watch_App.WatchConnectivityManager.session(_: __C.WCSession, didReceiveApplicationContext: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "MealWatcher Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/MealWatcher/Shared/WatchConnectivityManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B4A0262-8603-4CFF-AAA1-6D03E49C80C0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WatchPhoneAppDemo Watch App/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F903CBB-4B45-4CF6-BAB3-97A13401284E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WatchPhoneAppDemo/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "367"
+            endingLineNumber = "367"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "2F903CBB-4B45-4CF6-BAB3-97A13401284E - 93a1dbb4b7360399"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt; in WatchPhoneAppDemo.DropBoxView.body.getter : some"
+                  moduleName = "WatchPhoneAppDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/WatchPhoneAppDemo/WatchPhoneAppDemo/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "304"
+                  endingLineNumber = "304"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "2F903CBB-4B45-4CF6-BAB3-97A13401284E - 1b69bf36482931a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt; in WatchPhoneAppDemo.DropBoxView.body.getter : some"
+                  moduleName = "WatchPhoneAppDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/WatchPhoneAppDemo/WatchPhoneAppDemo/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "306"
+                  endingLineNumber = "306"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF469957-91E2-4C5D-AE25-BCBB6A533951"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WatchPhoneAppDemo/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "454"
+            endingLineNumber = "454"
+            landmarkName = "testDropBoxConnection(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63B00A61-1368-4628-84CA-7F99455694BB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MealWatcher/GenkiRing/BluetoothManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
+            landmarkName = "peripheral(_:didDiscoverCharacteristicsFor:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "694F54D8-03F0-4BD4-BCC7-AD6FCA3996DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/WatchConnectivityManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "session(_:didReceiveMessage:replyHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "694F54D8-03F0-4BD4-BCC7-AD6FCA3996DA - 9b612a42d1ead833"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealWatcher.WatchConnectivityManager.session(_: __C.WCSession, didReceiveMessage: Swift.Dictionary&lt;Swift.String, Any&gt;, replyHandler: (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MealWatcher"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/MealWatcher/Shared/WatchConnectivityManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1368">
+               </Location>
+               <Location
+                  uuid = "694F54D8-03F0-4BD4-BCC7-AD6FCA3996DA - 630a487bcd810558"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealWatcher_Watch_App.WatchConnectivityManager.session(_: __C.WCSession, didReceiveMessage: Swift.Dictionary&lt;Swift.String, Any&gt;, replyHandler: (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MealWatcher Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/MealWatcher/Shared/WatchConnectivityManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1908">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D425E384-B5EA-4AD1-A6A9-DABA18D6B651"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MealWatcher Watch App/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D425E384-B5EA-4AD1-A6A9-DABA18D6B651 - b45f0c8ab3af0e47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealWatcher_Watch_App.ContentView.body.getter : some"
+                  moduleName = "MealWatcher Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/MealWatcher/MealWatcher%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "1776">
+               </Location>
+               <Location
+                  uuid = "D425E384-B5EA-4AD1-A6A9-DABA18D6B651 - 304096fa2290bc40"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (Swift.Bool) -&gt; () in MealWatcher_Watch_App.ContentView.body.getter : some"
+                  moduleName = "MealWatcher Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhn/Desktop/MealWatcher/MealWatcher%20Watch%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
