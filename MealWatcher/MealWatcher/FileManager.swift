@@ -1,6 +1,8 @@
 //
 //  FileManager.swift
 //  FileManagerDemo
+//  
+//  This file is used to manage all the data that needs to be stored locally. 
 //
 //  Created by Jimmy Nguyen on 6/19/23.
 //
