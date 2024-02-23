@@ -2,6 +2,8 @@
 //  ViewModelPhone.swift
 //  WatchPhoneAppDemo
 //
+//  This file is not used for this project.
+//
 //  Created by Jimmy Nguyen on 6/9/23.
 //
 
