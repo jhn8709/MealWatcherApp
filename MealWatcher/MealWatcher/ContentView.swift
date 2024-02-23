@@ -2,6 +2,8 @@
 //  ContentView.swift
 //  BiteCounterProject
 //
+//  This file contains the main view or UI of the app.
+// 
 //  Created by Jimmy Nguyen on 6/8/23.
 //
 
@@ -11,6 +13,8 @@ import WatchConnectivity
 import SwiftyDropbox
 import CoreBluetooth
 
+/* This class is used to provide haptic feedback when certain buttons are pressed. Haptic
+   feedback is useful for grabbing the user's attention for issues in the app */
 class HapticManager {
     
     static let instance = HapticManager() // Singleton
@@ -76,8 +80,10 @@ struct ContentView: View {
     @State var navigateToSurveyView: Bool = false
     
     var body: some View {
-        NavigationView {
-            ScrollView {
+        NavigationView { // NavigationView is used since this view is used to traverse to other views
+            ScrollView { // ScrollView allows the user to scroll up and down the UI. Necessary if all UI elements do not fit on one screen.
+                
+                /* This VStack is used for the two buttons on the top. The left is used to quickly check the watch connection and the right button is used to navigate to settings page.
                 VStack(alignment: .leading) {
                     HStack {
                         /* Checks watch connectivity */
@@ -94,6 +100,8 @@ struct ContentView: View {
                             EmptyView()
                         }
                     }
+
+                    /* This button shows how many files are in the main directory used to store files for this app. If pressed, the display for the button is refreshed */
                     Button {
                         dataCount = vm.listSize()
                         
@@ -104,6 +112,8 @@ struct ContentView: View {
                             .foregroundColor(.purple)
                     }
                     .padding()
+
+                    /* This HStack contains the buttons for both the watch and the ring sensors */
                     HStack {
                         VStack {
                             Text("Watch Sensors")
@@ -129,7 +139,9 @@ struct ContentView: View {
                             })
                         }
                     }
-                    
+
+                    /* The button on the left is used when camera function is needed and the two buttons on the right designate the 
+                       image where 'pre' and 'post' being before and after respectively */
                     Text("Camera")
                         .font(.title)
                         .fontWeight(.bold)
@@ -161,6 +173,7 @@ struct ContentView: View {
                     .padding(.horizontal)
                     Spacer()
 
+                    /* This VStack has the survey button and the send to Dropbox button.
                     VStack(alignment: .center) {
                         Button(action: {
                             navigateToSurveyView = true
@@ -198,20 +211,23 @@ struct ContentView: View {
                     self.ringConnection = false
                 }
             }
+            /* This onChange function waits for a file that is sent from the watch to the phone. A file is sent after recording on the watch is stopped. 
             .onChange(of: connectivityManager.fileURL ?? exampleURL) { CSVFileURL in
-                if let waveRing = bluetoothViewModel.connectedPeripheral {
+                if let waveRing = bluetoothViewModel.connectedPeripheral { 
+                    /* If waveRing is recording while watch recording has been stopped, stop the recording on the ring */
                     if waveRing.state == .connected {
                         bluetoothViewModel.stopRecording()
                         bluetoothViewModel.disconnect(peripheral: waveRing)
                         ringConnection = false
-                        
                     }
                 }
                 if connectivityManager.fileURL != exampleURL {
                     print("New CSV file being read")
                     print("\(CSVFileURL)")
-
-                    guard let fileData = connectivityManager.fileData else {return}
+            
+                    guard let fileData = connectivityManager.fileData else {return} // check if the file has data and is not empty
+                    /* Save the file to the directory and if success, send all data in directory to Dropbox
+                       Note that the function is saveCSV which might be outdated but it is used to save data files in general */
                     vm.saveCSV(fileURL: CSVFileURL, fileData: fileData) { completed in
                         if completed {
                             submitPayload(participantID: participantID, iOSFiles: vm) { client in
@@ -231,17 +247,17 @@ struct ContentView: View {
                     print("Initialization of Failed to read CSV file")
                 }
             }
+            /* The ring sometimes connects but does not send data payloads. If this happens an alert is sent to tell the user to restart the ring */
             .alert(isPresented: $bluetoothViewModel.errorFlag) {
                     Alert(
                         title: Text("Ring not recording properly"),
                         message: Text("Please try resetting the ring by pressing, holding, and then releasing the top and bottom button at the same time. The buttons are located above and below the main daimond button."),
                         dismissButton: .default(Text("OK")))
-
             }
-
         }
     }
-    
+
+    /* Function that sends a message to the Apple Watch so that both know that sensors are on */
     func toggleSensors() {
         WCSession.default.sendMessage(["sensor-flag" : true], replyHandler: { reply in
             print(reply)
@@ -254,6 +270,8 @@ struct ContentView: View {
         errorHandler: { (error) in
             print("Error with button press")
         })
+        /* Note that to send messages, BOTH devices need to be on and awake. Updating application context will update even if watch is asleep but had bugs.
+           For now, sending a message has worked better to keep the devices in sync. Uncomment the code below to test using application context. */
 //        print("Toggling Sensors")
 //        guard WCSession.default.activationState == .activated else {
 //            print("Session not activated")
@@ -269,7 +287,8 @@ struct ContentView: View {
 //            }
 //        }
     }
-    
+
+    /* Calls the startWatchApp function which should launch the watchOS companion app. */
     func wakeUpWatch() {
         if connectivityManager.session.isReachable {
             reachable = "Connected"
@@ -283,7 +302,9 @@ struct ContentView: View {
             }
         }
     }
-    
+
+    /* This function will toggle the sensors if the watch and watch app is reachable. If the watch 
+       is not reachable, then it will try to launch the watch app using the wakeUpWatch() func */
     func wakeOrToggle(cameraUse: Bool) {
         //print("\(WCSession.default.activationState)")
         if connectivityManager.session.isReachable {
@@ -302,19 +323,17 @@ struct ContentView: View {
             if !WCSession.default.isReachable {
                 let message = ["wakeUp": true]
                 WCSession.default.sendMessage(message, replyHandler: nil) { error in
-
                     print("Error sending message: \(error.localizedDescription)")
                     wakeUpWatch()
-                    
                 }
-                
             }
-
             reachable = "Connected"
             //print("Camera button watch wake up")
         }
     }
-    
+
+    /* This function is used to connect to the ring with a certain UUID, create a new data file to record motion 
+       data from the ring, and initiate the datastream on the ring to the phone. */
     func connectToRing() {
         let date = Date()
         let df = DateFormatter()
@@ -342,7 +361,9 @@ struct ContentView: View {
         }
         bluetoothViewModel.startRecording(fileURL: currentURL)
     }
-    
+
+    /* This function is used to connect to the ring if ring is disconnected and disconnects if ring is 
+       currently connected and recording. */
     func toggleRing() {
         if let waveRing = bluetoothViewModel.connectedPeripheral {
             if waveRing.state == .connected {
