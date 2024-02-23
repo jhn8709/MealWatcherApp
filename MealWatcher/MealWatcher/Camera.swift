@@ -1,6 +1,9 @@
 //
 //  Camera.swift
-//  PhotoDemo
+//  
+//  This file is used to create the view used for the camera function. It requires the value of the pre/post flag used to designate the 
+//  whether the image was taken before or after the meal was taken. It also requires the participantID. Both the flag and participant
+//  ID is used for when the image is taken for the file name.
 //
 //  Created by Jimmy Nguyen on 6/8/23.
 //
