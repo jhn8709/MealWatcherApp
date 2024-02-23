@@ -1,6 +1,17 @@
 //
 //  SettingsView.swift
 //  WatchPhoneAppDemo
+// 
+//  This file contains the view for the settings tab. It allows the user to change the participant ID,
+//  record which ring they are using, and allows syncing the app to a single ring. The user can
+//  also delete all recorded data if needed.
+//
+//  Note: Bluetooth devices cannot be addressed by their MAC address on iOS devices. This is for security
+//  purposes and is intentional by Apple. To get access to a specific Bluetooth device, the user must
+//  connect to it first and the iOS device will create a UUID for it. Then, connections should be made by
+//  looking for that specific UUID. These UUIDs are the MAC address but encypted. A single Bluetooth device 
+//  (in this case a Genki ring) will have a different UUID on each device it is paired to unlike a MAC address 
+//  which is specific to that ring.
 //
 //  Created by Jimmy Nguyen on 10/5/23.
 //
@@ -11,10 +22,12 @@ var examplePID: String = "P9999"
 var exampleRID: String = "00000000-1111-2222-3333-444455556666"
 
 struct SettingsView: View {
+    /* Binding variables are passed from the main view and are referenced in this view */
     @Binding var participantID: String
     @Binding var selectedOption: Int
     @Binding var ringUUIDString: String
     //@Binding var ringID: Int
+    /* The state variables are local to this view */
     @State var watchID: String?
     @State var examplePID: String = "P9999"
     @State var exampleRID: String = "00000000-1111-2222-3333-444455556666"
