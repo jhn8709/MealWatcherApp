@@ -17,7 +17,7 @@
   - Enables file transfers so that data on watch can be transferred to the phone.
 * Connection to Genki Wave Ring through CoreBluetooth library.
   - Creates a unique ID that allows the app to only interact with a specific ring
-  - Connects to ring and receive data payloads
+  - Connects to ring to receive data payloads
 * Interactive UI that allows users to toggle sensors on iPhone or Apple Watch and know when the sensors are on for privacy purposes.
 * Dark/Light mode support
 * Settings tab can be used to change files names according to the participant's ID for organization of data.
