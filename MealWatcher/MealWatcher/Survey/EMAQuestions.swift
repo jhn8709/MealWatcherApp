@@ -2,6 +2,9 @@
 //  EMAQuestions.swift
 //  SurveyDemoLight
 //
+//  This file is used to determine the questions that are on the survey. Edit this file if new questions
+//  need to be asked or if questions need to be edited or removed.
+//
 //  Created by Jimmy Nguyen on 7/7/23.
 //
 
