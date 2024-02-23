@@ -30,9 +30,19 @@
 ## How To Use
 
 1) Sync Apple Watch to iPhone if needed.
-2) Set up Dropbox App here
-   - 
-4) 
+2) Open Xcode project by downloading this repository.
+3) Set up Dropbox app and change Dropbox related information in code.
+4) If app is running, first go to settings tab and set participant ID.
+5) Then, sync ring by pushing the sync button until a unique ID is generated for the ring.
+6) In the main page there will be three large colored buttons, one for watch sensors, one for ring sensors, and one to set the camera for an image.
+7) To toggle the sensors, either press the sensor buttons so that they are both green and display 'ON' or press the camera button with the 'Pre' setting bubble filled next to the camera button while the sensor buttons are red and display 'OFF'
+8) Take an image of the meal before eating to initiate the sensors or after the sensors are initiated. Make sure the 'Pre' setting bubble is filled.
+9) While the sensors are on, the user can freely use their phones and motion will be recorded in the background.
+10) To turn sensors off, either press the sensor buttons so that they are both red and display 'OFF' or press the camera button with the 'Pose' setting bubble filled while the sensor buttons are green and display 'ON'
+11) Take an image after the meal to toggle the sensors off or while the sensors are on. Make sure the 'Post' setting bubble is filled.
+12) Click the survey button on the bottom to fill out a survey.
+13) Dropbox upload should be automatic after sensors are turned off, but there is also a manual button to upload data.
+14) It is recommended to completely close app after usage to wipe survey entries (will be fixed later).
 
 ## Download
 
